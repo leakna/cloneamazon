@@ -1,0 +1,166 @@
+.body{
+  max-width: 1000px;
+  
+  margin-top: 100px;
+  margin-left:auto ;
+  margin-right: auto;
+}
+.review,.delivery-date,#name,#price,.header-text{
+  font-weight: bold;
+}
+#price{
+  color: rgb(202, 46, 46);
+}
+
+.grid-div{
+  
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 20px;
+
+}
+.order-item-grid{
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+
+
+}
+.detail-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  
+}
+.item-container{
+  border: 1px solid rgb(222, 222, 222);
+  padding-left: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+.delivery-date{
+  color: green;
+}
+
+.item-left-container{
+  display: flex;
+  align-items: start;
+
+}
+.img-div{
+  width: 150px;
+}
+.img-div img{
+  width: 100%;
+}
+#name{
+  line-height: 18px;
+  
+}
+#quantity{
+  font-weight: 400;
+  white-space: nowrap;
+}
+#quantity span{
+  color: rgb(106, 106, 194);
+  margin-left: 5px;
+}
+.detail-item p{
+  font-size: 15px;
+  margin: 15px;
+  margin: 0;
+  line-height: 25px;
+}
+
+.detail-item{
+  margin-left:20px ;
+
+}
+
+.delivery-option-text{
+  margin: 0px;
+  font-weight: bold;
+}
+
+.delivery-opt{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  line-height: 5px;
+  
+}
+.del-date{
+  font-weight: 400;
+  font-size: 15px;
+}
+.del-price{
+  font-weight: 300;
+  color:rgb(120, 120, 120);
+  font-size: 14px;
+}
+.order-summary{
+  border: 1px solid rgb(222, 222, 222);
+  padding:20px 20px;
+  height: auto;
+  border-radius: 5px;
+  
+ 
+}
+.each-item-summary{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 10px;
+  font-size: 13px;
+  
+}
+.tax-price{
+  border-top:1px solid rgb(222, 222, 222);
+  padding-top:10px ;
+  
+}
+.tax-text{
+  padding-top:10px ;
+}
+.total-sum{
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(164, 64, 64);
+  border-top:1px solid rgb(222, 222, 222);
+  padding-top: 20px;
+
+}
+.sum-butt{
+  width: 100%;
+  margin-top:10px ;
+  padding:10px 0px;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(247, 202, 0);
+}
+@media(max-width:1000px){
+  .grid-div{
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-summary{
+    grid-row: 1;
+    margin-bottom: 10px;
+   
+    
+  }
+  .detail-grid{
+    grid-template-columns: 1fr;
+  }
+  .body{
+    max-width: 500px;
+  }
+  .middle-header p{
+    font-size: 20px;
+  }
+  
+}
+
+

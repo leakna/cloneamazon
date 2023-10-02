@@ -1,0 +1,116 @@
+.header{
+  display: flex;
+  position: fixed;
+  background-color:black;
+  left: 0;
+  right: 0;
+  top:0;
+  height: 60px;
+  z-index: 100;
+
+  
+}
+body{
+  margin: 0px;
+}
+
+.middle-container{
+  flex: 1;
+  display: flex;
+  margin-left:150px ;
+  
+}
+.right-container{
+  width:200px;
+  display: flex;
+
+}
+img{
+  width: 100px;
+  margin: 20px 25px;
+}
+.input-box{
+  flex: 1;
+  margin: 10px 0px ;
+  max-width: 800px;
+  width: 0px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  
+}
+.input-box::placeholder{
+  padding-left: 20px;
+
+}
+.search-icon-container{
+  margin: 10px 0px;
+  width: 45px;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  background-color: orange;
+  
+}
+.return-container{
+  width: 100px;
+}
+.cart-container{
+  width: 100px;
+  position: relative;
+  
+}
+p{
+
+  margin: 0px;
+  font-family: 'roboto';
+}
+.header p{
+  color: white;
+}
+.return-text{
+  text-align:left;
+  line-height: 20px;
+  margin: 10px 0px 0px 30px;
+  
+  font-size: 12px;
+  
+}
+.order-text,.inside-cartcon{
+  font-weight: bold;
+  font-size:15px;
+}
+.inside-cartcon{
+  position: absolute;
+  right:20px;
+  margin:0px;
+  bottom: 5px;
+}
+.count-text{
+  position: absolute;
+  color: orange;
+  width :30px;
+  left: 14px;
+  top: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+.logo-mobile{
+  width: 30px;
+  display: none;
+}
+@media(max-width:750px){
+  .middle-container{
+
+    margin: 0px;
+  }
+}
+@media(max-width:530px){
+  .logo-laptop{
+    display: none;
+  }
+  .logo-mobile{
+    display: inline-block;
+    width: 30px;
+  }
+
+
+}
